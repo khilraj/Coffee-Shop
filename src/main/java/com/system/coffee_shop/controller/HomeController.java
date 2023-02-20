@@ -8,7 +8,6 @@ import com.system.coffee_shop.pojo.ProductPojo;
 import com.system.coffee_shop.pojo.UserPojo;
 import com.system.coffee_shop.repo.UserRepo;
 import com.system.coffee_shop.services.CartService;
-import com.system.coffee_shop.services.CategoryService;
 import com.system.coffee_shop.services.ProductService;
 import com.system.coffee_shop.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -30,7 +29,6 @@ public class HomeController {
     private final ProductService productService;
     private final UserService userService;
     private final CartService cartService;
-    private final CategoryService categoryService;
 
 
     @GetMapping("/dashboard")
@@ -173,10 +171,6 @@ public class HomeController {
         List<Product> products = productService.fetchAll();
         model.addAttribute("products", products);
 
-//        Map<Integer, Double> discount = productService.comparePrice(products);
-
-        List<Category> categories = categoryService.fetchAll();
-        model.addAttribute("categories", categories);
 
         return "/shop";
     }

@@ -168,6 +168,13 @@
 
 /* Begin Media Queries*/
 @media screen and (max-width: 850px) {
+  .home-section .content-abt h3 {
+    width: 470px;
+  }
+
+  .home-section .content-abt p {
+    width: 400px;
+  }
   .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -192,10 +199,17 @@
   }
 }
 
+@media (max-width: 678px) {
+  .story p {
+    font-size: 40px;
+  }
+
+}
+
 
 @media (max-width:768px) {
 
-  #menu-btn {
+  #menu-icon {
     display: inline-block;
   }
 

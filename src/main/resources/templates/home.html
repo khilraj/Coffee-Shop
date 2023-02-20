@@ -123,7 +123,7 @@
             Doloremque accusamus eaque animi repellendus            </p>
         </div>
         <div class="section-support-icon-image">
-          <img src="../image/1.png" alt="">
+          <img th:src="@{/img/1.png}" alt="">
         </div>
       </div>
 
@@ -135,7 +135,7 @@
             Doloremque accusamus eaque animi repellendus            </p>
         </div>
         <div class="section-support-icon-image">
-          <img src="../image/2.png" alt="">
+          <img th:src="@{/img/2.png}" alt="">
         </div>
       </div>
 
@@ -169,7 +169,7 @@
 
       <div class="section-support-blocks">
         <div class="section-support-right-icon-image">
-          <img src="../image/4.png" alt="">
+          <img th:src="@{/img/4.png}" alt="">
         </div>
         <div class="section-support-right-content">
           <h6 class="section-support-heading">croissant</h6>
@@ -181,7 +181,7 @@
 
       <div class="section-support-blocks">
         <div class="section-support-right-icon-image">
-          <img src="../image/5.png" alt="">
+          <img th:src="@{/img/5.png}" alt="">
         </div>
         <div class="section-support-right-content">
           <h6 class="section-support-heading">croissant</h6>
@@ -193,7 +193,7 @@
 
       <div class="section-support-blocks">
         <div class="section-support-right-icon-image">
-          <img src="../image/6.png" alt="">
+          <img th:src="@{/img/6.png}" alt="">
         </div>
         <div class="section-support-right-content">
           <h6 class="section-support-heading">croissant</h6>
@@ -221,7 +221,7 @@
       <h2 class="coffee-special">what makes our coffee special ?</h2>
       <div class="first-point">
         <div class="image-icon-section">
-          <img src="../image/7.png" alt="">
+          <img th:src="@{/img/7.png}" alt="">
         </div>
         <div class="section-description">
           <h2>pure ingridients</h2>
@@ -233,7 +233,7 @@
 
       <div class="first-point">
         <div class="image-icon-section">
-          <img src="../image/8.png" alt="">
+          <img th:src="@{/img/8.png}" alt="">
         </div>
         <div class="section-description">
           <h2>sustainability</h2>
@@ -245,7 +245,7 @@
 
       <div class="first-point">
         <div class="image-icon-section">
-          <img src="../image/9.png" alt="">
+          <img th:src="@{/img/9.png}" alt="">
         </div>
         <div class="section-description">
           <h2>enviromentalism</h2>
@@ -257,7 +257,7 @@
 
       <div class="first-point">
         <div class="image-icon-section">
-          <img src="../image/10.png" alt="">
+          <img th:src="@{/img/10.png}" alt="">
         </div>
         <div class="section-description">
           <h2>formula transparency</h2>
@@ -279,73 +279,31 @@
   <p class="theory">e = m c<sup>2</sup></p>
   <p>energy = milk * coffee<sup>2</sup></p>
   <p class="discount">flat  20% discount</p>
-  <div class="story-shop">
-    <a href="#">shop</a>
-  </div>
 </div>
 
 
 
-<!-- TRENDING SECTION STARTS -->
-<section class="product-section">
-  <h1 class="heading">
-    what's trending now
-  </h1>
-<!--  TRENDING ITEMS -->
-  <div class="trending-containers">
+<!--&lt;!&ndash; TRENDING SECTION STARTS &ndash;&gt;-->
+<!--<section class="product-section">-->
+<!--  <h1 class="heading">-->
+<!--    what's trending now-->
+<!--  </h1>-->
+<!--&lt;!&ndash;  TRENDING ITEMS &ndash;&gt;-->
+<!--  <div class="trending-containers">-->
 
-    <div class="small-box"  th:each="trendingProduct:${trending}">
-      <!-- <div class="icon">
-        <i class='bx bx-shopping-bag'></i>
-        <i class='bx bxs-heart-circle' ></i>
-        <a href="#" class="fas fa-eye"></a>
-      </div> -->
-      <div class="image">
-        <a th:href="@{~/product/}+${trendingProduct.id}">
-        <img class="Product-Image" th:src="'data:image/png;base64,'+${trendingProduct.product_image}" alt="">
-        </a>
-      </div>
-      <div class="content">
-        <h3><a th:href="@{~/product/}+${trendingProduct.id}" th:text="${trendingProduct.product_name}"></a></h3>
-        <div class="review-star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <div class="product-price">
-          <span th:text="'Rs.' +${trendingProduct.product_price}"></span>
-        </div>
-<!--        <div class="product-price" th:unless="${popularDiscount.containsKey(trendingProduct.id)}">-->
-<!--&lt;!&ndash;          Rs.299 &ndash;&gt;-->
-<!--          <span th:text="'Rs.'+${trendingProduct.product_price}+'/-'"></span>-->
-<!--        </div>-->
-
-<!--        <div class="product-price" th:if="${trendingProductsDiscount.containsKey(trendingProduct.id)}">-->
-<!--          <span th:text="'Rs.'+(${trendingProduct.product_price} - (${trendingProductsDiscount.get(trendingProduct.id)}/100) * ${trendingProduct.product_price})+'/-'"></span>-->
-<!--          <span class="old" th:text="'Rs.'+${trendingProduct.product_price}+'/-'"></span>-->
-<!--        </div>-->
-
-        <a th:href="@{~/cart/add/}+${trendingProduct.id}">
-        <button class="add-cart">add to cart</button>
-        </a>
-
-      </div>
-    </div>
-
-
-<!--    <div class="small-box">-->
+<!--    <div class="small-box"  th:each="trendingProduct:${trending}">-->
 <!--      &lt;!&ndash; <div class="icon">-->
 <!--        <i class='bx bx-shopping-bag'></i>-->
 <!--        <i class='bx bxs-heart-circle' ></i>-->
 <!--        <a href="#" class="fas fa-eye"></a>-->
 <!--      </div> &ndash;&gt;-->
 <!--      <div class="image">-->
-<!--        <img class="Product-Image" th:src="@{/img/product-2.png}" alt="">-->
+<!--        <a th:href="@{~/product/}+${trendingProduct.id}">-->
+<!--        <img class="Product-Image" th:src="'data:image/png;base64,'+${trendingProduct.product_image}" alt="">-->
+<!--        </a>-->
 <!--      </div>-->
 <!--      <div class="content">-->
-<!--        <h3 class="product-name">abc</h3>-->
+<!--        <h3><a th:href="@{~/product/}+${trendingProduct.id}" th:text="${trendingProduct.product_name}"></a></h3>-->
 <!--        <div class="review-star">-->
 <!--          <i class="fas fa-star"></i>-->
 <!--          <i class="fas fa-star"></i>-->
@@ -353,12 +311,51 @@
 <!--          <i class="fas fa-star"></i>-->
 <!--          <i class="fas fa-star-half-alt"></i>-->
 <!--        </div>-->
-<!--        <div class="product-price">Rs.299 <span>399</span></div>-->
+<!--        <div class="product-price">-->
+<!--          <span th:text="'Rs.' +${trendingProduct.product_price}"></span>-->
+<!--        </div>-->
+<!--&lt;!&ndash;        <div class="product-price" th:unless="${popularDiscount.containsKey(trendingProduct.id)}">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;          Rs.299 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;          <span th:text="'Rs.'+${trendingProduct.product_price}+'/-'"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class="product-price" th:if="${trendingProductsDiscount.containsKey(trendingProduct.id)}">&ndash;&gt;-->
+<!--&lt;!&ndash;          <span th:text="'Rs.'+(${trendingProduct.product_price} - (${trendingProductsDiscount.get(trendingProduct.id)}/100) * ${trendingProduct.product_price})+'/-'"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;          <span class="old" th:text="'Rs.'+${trendingProduct.product_price}+'/-'"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--        <a th:href="@{~/cart/add/}+${trendingProduct.id}">-->
 <!--        <button class="add-cart">add to cart</button>-->
+<!--        </a>-->
+
 <!--      </div>-->
 <!--    </div>-->
-  </div>
-</section>
+
+
+<!--&lt;!&ndash;    <div class="small-box">&ndash;&gt;-->
+<!--&lt;!&ndash;      &lt;!&ndash; <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;        <i class='bx bx-shopping-bag'></i>&ndash;&gt;-->
+<!--&lt;!&ndash;        <i class='bx bxs-heart-circle' ></i>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a href="#" class="fas fa-eye"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="image">&ndash;&gt;-->
+<!--&lt;!&ndash;        <img class="Product-Image" th:src="@{/img/product-2.png}" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="content">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h3 class="product-name">abc</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="review-star">&ndash;&gt;-->
+<!--&lt;!&ndash;          <i class="fas fa-star"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;          <i class="fas fa-star"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;          <i class="fas fa-star"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;          <i class="fas fa-star"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;          <i class="fas fa-star-half-alt"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="product-price">Rs.299 <span>399</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button class="add-cart">add to cart</button>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--  </div>-->
+<!--</section>-->
 
 
 <!-- UPCOMING PRODUCTS STARTS-->
@@ -370,11 +367,6 @@
   <div class="trending-containers">
 
     <div class="small-box" th:each="newProduct:${newProducts}">
-      <!-- <div class="icon">
-        <i class='bx bx-shopping-bag'></i>
-        <i class='bx bxs-heart-circle' ></i>
-        <a href="#" class="fas fa-eye"></a>
-      </div> -->
       <div class="image">
           <img class="Product-Image" th:src="'data:image/png;base64,'+${newProduct.product_image}" alt="">
       </div>
@@ -390,15 +382,6 @@
         <div class="product-price">
           <span th:text=" 'Rs.' + ${newProduct.product_price}"></span>
         </div>
-<!--        <div class="product-price" th:unless="${popularDiscount.containsKey(newProduct.id)}">-->
-<!--          &lt;!&ndash;          Rs.299 &ndash;&gt;-->
-<!--          <span th:text="'Rs.'+${newProduct.product_price}+'/-'"></span>-->
-<!--        </div>-->
-
-<!--        <div class="product-price" th:if="${popularDiscount.containsKey(newProduct.id)}">-->
-<!--          <span th:text="'Rs.'+(${newProduct.product_price} - (${newDiscount.get(trendingProduct.id)}/100) * ${newProduct.product_price})+'/-'"></span>-->
-<!--          <span class="old" th:text="'Rs.'+${newProduct.product_price}+'/-'"></span>-->
-<!--        </div>-->
 
         <a th:href="@{~/cart/add/}+${newProduct.id}">
           <button class="add-cart">add to cart</button>
@@ -439,142 +422,6 @@
 
   </div>
 </section>
-
-<!--&lt;!&ndash;footer areaa starts&ndash;&gt;-->
-<!--<footer class="text-center text-lg-start bg-light text-muted">-->
-<!--  <div th:replace="~{fragments/footer.html :: footer-area}"></div>-->
-<!--</footer>-->
-
-<!--&lt;!&ndash;footer area ends &ndash;&gt;-->
-
-<!--&lt;!&ndash; Footer &ndash;&gt;-->
-<!--<footer class="text-center text-lg-start bg-light text-muted">-->
-<!--  &lt;!&ndash; footer area starts &ndash;&gt;-->
-<!--  <div class="footer-area">-->
-<!--    &lt;!&ndash; Section: Social media &ndash;&gt;-->
-<!--    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: #684027">-->
-<!--      &lt;!&ndash; Left &ndash;&gt;-->
-<!--      <div class="me-5 d-none d-lg-block">-->
-<!--        <span>Get connected with us on social networks:</span>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Left &ndash;&gt;-->
-
-<!--      &lt;!&ndash; Right &ndash;&gt;-->
-<!--      <div>-->
-<!--        <a href="" class="me-4 text-reset">-->
-<!--          <i class="fab fa-facebook-f"></i>-->
-<!--        </a>-->
-<!--        <a href="" class="me-4 text-reset">-->
-<!--          <i class="fab fa-twitter"></i>-->
-<!--        </a>-->
-<!--        <a href="" class="me-4 text-reset">-->
-<!--          <i class="fab fa-google"></i>-->
-<!--        </a>-->
-<!--        <a href="" class="me-4 text-reset">-->
-<!--          <i class="fab fa-instagram"></i>-->
-<!--        </a>-->
-<!--        <a href="" class="me-4 text-reset">-->
-<!--          <i class="fab fa-linkedin"></i>-->
-<!--        </a>-->
-<!--        <a href="" class="me-4 text-reset">-->
-<!--          <i class="fab fa-github"></i>-->
-<!--        </a>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Right &ndash;&gt;-->
-<!--    </section>-->
-<!--    &lt;!&ndash; Section: Social media &ndash;&gt;-->
-
-<!--    &lt;!&ndash; Section: Links  &ndash;&gt;-->
-<!--    <section class="">-->
-<!--      <div class="container text-center text-md-start mt-5">-->
-<!--        &lt;!&ndash; Grid row &ndash;&gt;-->
-<!--        <div class="row mt-3">-->
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-<!--          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">-->
-<!--            &lt;!&ndash; Content &ndash;&gt;-->
-<!--            <h6 class="text-uppercase fw-bold mb-4">-->
-<!--              <i class="fas fa-gem me-3"></i>Coffee Shop-->
-<!--            </h6>-->
-<!--            <p>-->
-<!--              Lorem ipsum dolor sit amet consectetur adipisicing elit.-->
-<!--              A ratione magnam iste neque ea. Repellat, eos placeat-->
-<!--              inventore nisi vel nostrum voluptate ipsa ipsum, corporis, enim sit cumque dolorum cum?-->
-<!--            </p>-->
-<!--          </div>-->
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-<!--          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">-->
-<!--            &lt;!&ndash; Links &ndash;&gt;-->
-<!--            <h6 class="text-uppercase fw-bold mb-4">-->
-<!--              Products-->
-<!--            </h6>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Coffee</a>-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Cappuccino</a>-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Late</a>-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Tea</a>-->
-<!--            </p>-->
-<!--          </div>-->
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-<!--          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">-->
-<!--            &lt;!&ndash; Links &ndash;&gt;-->
-<!--            <h6 class="text-uppercase fw-bold mb-4">-->
-<!--              Useful links-->
-<!--            </h6>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Home</a>-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">about</a>-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Shop</a>-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              <a href="#!" class="text-reset">Contact</a>-->
-<!--            </p>-->
-<!--          </div>-->
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-<!--          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">-->
-<!--            &lt;!&ndash; Links &ndash;&gt;-->
-<!--            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>-->
-<!--            <p><i class="fas fa-home me-3"></i> Softwarica, Dilli-bazar</p>-->
-<!--            <p>-->
-<!--              <i class="fas fa-envelope me-3"></i>-->
-<!--              pasal@example.com-->
-<!--            </p>-->
-<!--            <p><i class="fas fa-phone me-3"></i> +977 9825352010</p>-->
-<!--            <p><i class="fas fa-print me-3"></i> +977 9000000000</p>-->
-<!--          </div>-->
-<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; Grid row &ndash;&gt;-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    &lt;!&ndash; Section: Links  &ndash;&gt;-->
-
-<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
-<!--    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">-->
-<!--      © 2021 Copyright:-->
-<!--      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">CoffeeShop.com</a>-->
-<!--    </div>-->
-<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
-<!--  </div>-->
-<!--  &lt;!&ndash; footer area &ndash;&gt;-->
-<!--</footer>-->
-<!--&lt;!&ndash; Footer &ndash;&gt;-->
-
 
 </body>
 

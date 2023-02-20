@@ -23,7 +23,6 @@ import java.util.stream.Stream;
 public class ProductServiceImpl implements ProductService {
     private final ProductRepo productRepo;
     private final CartRepo cartRepo;
-    private final CategoryRepo categoryRepo;
     public static String UPLOAD_DIRECTORY = System.getProperty("user.dir") + "/product";
 
     @Override
