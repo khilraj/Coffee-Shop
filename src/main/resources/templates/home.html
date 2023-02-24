@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop || home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="css/b.css"> -->
+  <link rel="stylesheet" th:href="@{/css/header.css}">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{/css/responsive.css}">
+
+  <link rel="stylesheet" th:href="@{/css/styles.css?v=1.0}">
+
+  <!-- use for box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+
+<!---HEADER SECTION STARTS-->
+<header class="header">
+  <div th:replace="~{fragments/header.html :: header-area}"></div>
+</header>
+<!-----header section ends-->
+
+
+<!---HOME SECTION STARTS-->
+<section class="home-section" id="home-section">
+  <video class="video-slide active" th:src="@{/video/first-slide.mp4}" autoplay muted loop></video>
+  <!-- <video class="video-slide" src="/project/second-slide.mp4" autoplay muted loop></video>
+  <video class="video-slide" src="/project/third-slide.mp4" autoplay muted loop></video>
+  <video class="video-slide" src="/project/fourth-slide.mp4" autoplay muted loop></video> -->
+
+  <div class="content-abt active">
+    <h3>
+      from our plantation to your cup!
+    </h3>
+    <p>
+      We’re the Coffee Bean and we’ve been roasting and serving organic
+      coffee here in Toronto since 1981. We believe in only sourcing ethically
+      farmed beans, roasting them in house, and serving fresh coffee to our customers
+      at a fair price.
+    </p>
+    <a href="#" class="btn">get yours now</a>
+  </div>
+
+  <div class="content-abt">
+    <h3>
+      from our plantation to your cup!
+    </h3>
+    <p>
+      We’re the Coffee Bean and we’ve been roasting and serving organic
+      coffee here in Toronto since 1981. We believe in only sourcing ethically
+      farmed beans, roasting them in house, and serving fresh coffee to our customers
+      at a fair price.
+    </p>
+    <a href="#" class="btn">get yours now</a>
+  </div>
+
+  <div class="content-abt">
+    <h3>
+      from our plantation to your cup!
+    </h3>
+    <p>
+      We’re the Coffee Bean and we’ve been roasting and serving organic
+      coffee here in Toronto since 1981. We believe in only sourcing ethically
+      farmed beans, roasting them in house, and serving fresh coffee to our customers
+      at a fair price.
+    </p>
+    <a href="#" class="btn">get yours now</a>
+  </div>
+
+  <div class="content-abt">
+    <h3>
+      from our plantation to your cup!
+    </h3>
+    <p>
+      We’re the Coffee Bean and we’ve been roasting and serving organic
+      coffee here in Toronto since 1981. We believe in only sourcing ethically
+      farmed beans, roasting them in house, and serving fresh coffee to our customers
+      at a fair price.
+    </p>
+    <a href="#" class="btn">get yours now</a>
+  </div>
+
+  <!-- <div class="slider-navigation">
+    <div class="nav-btn active"></div>
+    <div class="nav-btn"></div>
+    <div class="nav-btn"></div>
+    <div class="nav-btn"></div>
+  </div> -->
+
+</section>
+
+<!-----home section ends here-->
+
+<!-- row cofee build section -->
+<div class="coffee-build">
+  <div class="section-heading text-center">
+    <h2 class="section-main-heading">coffee build your base</h2>
+  </div>
+  <div class="section-grid-banner">
+    <!-- first column starts -->
+    <div class="section-additional-grids three-items">
+
+      <div class="section-support-left-blocks">
+        <div class="section-support-content">
+          <h6 class="section-support-heading">croissant</h6>
+          <p class="section-support-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque accusamus eaque animi repellendus            </p>
+        </div>
+        <div class="section-support-icon-image">
+          <img src="../image/1.png" alt="">
+        </div>
+      </div>
+
+      <div class="section-support-left-blocks">
+        <div class="section-support-content">
+          <h6 class="section-support-heading">croissant</h6>
+          <p class="section-support-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque accusamus eaque animi repellendus            </p>
+        </div>
+        <div class="section-support-icon-image">
+          <img src="../image/2.png" alt="">
+        </div>
+      </div>
+
+      <div class="section-support-left-blocks">
+        <div class="section-support-content">
+          <h6 class="section-support-heading">croissant</h6>
+          <p class="section-support-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque accusamus eaque animi repellendus
+
+          </p>
+        </div>
+        <div class="section-support-icon-image">
+          <img th:src="@{/img/3.png}" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- first column end -->
+
+
+    <!-- second column starts -->
+    <div class="section-main-grids sectin-column">
+      <div class="section-grid-image">
+        <img th:src="@{/img/coffee-build-banner.webp}" alt="">
+      </div>
+    </div>
+    <!-- second column end -->
+
+    <!-- third column starts -->
+    <div class="section-additional-grids three-items">
+
+      <div class="section-support-blocks">
+        <div class="section-support-right-icon-image">
+          <img src="../image/4.png" alt="">
+        </div>
+        <div class="section-support-right-content">
+          <h6 class="section-support-heading">croissant</h6>
+          <p class="section-support-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque accusamus eaque animi repellendus            </p>
+        </div>
+      </div>
+
+      <div class="section-support-blocks">
+        <div class="section-support-right-icon-image">
+          <img src="../image/5.png" alt="">
+        </div>
+        <div class="section-support-right-content">
+          <h6 class="section-support-heading">croissant</h6>
+          <p class="section-support-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque accusamus eaque animi repellendus            </p>
+        </div>
+      </div>
+
+      <div class="section-support-blocks">
+        <div class="section-support-right-icon-image">
+          <img src="../image/6.png" alt="">
+        </div>
+        <div class="section-support-right-content">
+          <h6 class="section-support-heading">croissant</h6>
+          <p class="section-support-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque accusamus eaque animi repellendus            </p>
+        </div>
+      </div>  `
+    </div>
+    <!-- third column end -->
+  </div>
+
+</div>
+
+
+<!----ABOUT SECTION STARTS-->
+<section class="about-section" id="about-section">
+  <h1 class="heading">about us </h1>
+  <div class="row">
+    <div class="image-sec">
+      <img th:src="@{/img/coffee-special.jpg}"  alt="about-image">
+    </div>
+
+    <div class="content-sec">
+      <h2 class="coffee-special">what makes our coffee special ?</h2>
+      <div class="first-point">
+        <div class="image-icon-section">
+          <img src="../image/7.png" alt="">
+        </div>
+        <div class="section-description">
+          <h2>pure ingridients</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+
+      <div class="first-point">
+        <div class="image-icon-section">
+          <img src="../image/8.png" alt="">
+        </div>
+        <div class="section-description">
+          <h2>sustainability</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+
+      <div class="first-point">
+        <div class="image-icon-section">
+          <img src="../image/9.png" alt="">
+        </div>
+        <div class="section-description">
+          <h2>enviromentalism</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+
+      <div class="first-point">
+        <div class="image-icon-section">
+          <img src="../image/10.png" alt="">
+        </div>
+        <div class="section-description">
+          <h2>formula transparency</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- about section ends here -->
+
+
+<!-- story section starts -->
+<div class="story">
+  <p class="theory">e = m c<sup>2</sup></p>
+  <p>energy = milk * coffee<sup>2</sup></p>
+  <p class="discount">flat  20% discount</p>
+  <div class="story-shop">
+    <a href="#">shop</a>
+  </div>
+</div>
+
+
+
+<!-- TRENDING SECTION STARTS -->
+<section class="product-section">
+  <h1 class="heading">
+    what's trending now
+  </h1>
+<!--  TRENDING ITEMS -->
+  <div class="trending-containers">
+
+    <div class="small-box"  th:each="trendingProduct:${trending}">
+      <!-- <div class="icon">
+        <i class='bx bx-shopping-bag'></i>
+        <i class='bx bxs-heart-circle' ></i>
+        <a href="#" class="fas fa-eye"></a>
+      </div> -->
+      <div class="image">
+        <a th:href="@{~/product/}+${trendingProduct.id}">
+        <img class="Product-Image" th:src="'data:image/png;base64,'+${trendingProduct.product_image}" alt="">
+        </a>
+      </div>
+      <div class="content">
+        <h3><a th:href="@{~/product/}+${trendingProduct.id}" th:text="${trendingProduct.product_name}"></a></h3>
+        <div class="review-star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="product-price">
+          <span th:text="'Rs.' +${trendingProduct.product_price}"></span>
+        </div>
+<!--        <div class="product-price" th:unless="${popularDiscount.containsKey(trendingProduct.id)}">-->
+<!--&lt;!&ndash;          Rs.299 &ndash;&gt;-->
+<!--          <span th:text="'Rs.'+${trendingProduct.product_price}+'/-'"></span>-->
+<!--        </div>-->
+
+<!--        <div class="product-price" th:if="${trendingProductsDiscount.containsKey(trendingProduct.id)}">-->
+<!--          <span th:text="'Rs.'+(${trendingProduct.product_price} - (${trendingProductsDiscount.get(trendingProduct.id)}/100) * ${trendingProduct.product_price})+'/-'"></span>-->
+<!--          <span class="old" th:text="'Rs.'+${trendingProduct.product_price}+'/-'"></span>-->
+<!--        </div>-->
+
+        <a th:href="@{~/cart/add/}+${trendingProduct.id}">
+        <button class="add-cart">add to cart</button>
+        </a>
+
+      </div>
+    </div>
+
+
+<!--    <div class="small-box">-->
+<!--      &lt;!&ndash; <div class="icon">-->
+<!--        <i class='bx bx-shopping-bag'></i>-->
+<!--        <i class='bx bxs-heart-circle' ></i>-->
+<!--        <a href="#" class="fas fa-eye"></a>-->
+<!--      </div> &ndash;&gt;-->
+<!--      <div class="image">-->
+<!--        <img class="Product-Image" th:src="@{/img/product-2.png}" alt="">-->
+<!--      </div>-->
+<!--      <div class="content">-->
+<!--        <h3 class="product-name">abc</h3>-->
+<!--        <div class="review-star">-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star-half-alt"></i>-->
+<!--        </div>-->
+<!--        <div class="product-price">Rs.299 <span>399</span></div>-->
+<!--        <button class="add-cart">add to cart</button>-->
+<!--      </div>-->
+<!--    </div>-->
+  </div>
+</section>
+
+
+<!-- UPCOMING PRODUCTS STARTS-->
+<section class="product-section">
+  <h1 class="heading">
+    upcoming products
+  </h1>
+  <!--  UPCOMING ITEMS -->
+  <div class="trending-containers">
+
+    <div class="small-box" th:each="newProduct:${newProducts}">
+      <!-- <div class="icon">
+        <i class='bx bx-shopping-bag'></i>
+        <i class='bx bxs-heart-circle' ></i>
+        <a href="#" class="fas fa-eye"></a>
+      </div> -->
+      <div class="image">
+          <img class="Product-Image" th:src="'data:image/png;base64,'+${newProduct.product_image}" alt="">
+      </div>
+      <div class="content">
+        <h3 <a th:href="@{~/product/}+${newProduct.id}" th:text="${newProduct.product_name}"></a></h3>
+        <div class="review-star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="product-price">
+          <span th:text=" 'Rs.' + ${newProduct.product_price}"></span>
+        </div>
+<!--        <div class="product-price" th:unless="${popularDiscount.containsKey(newProduct.id)}">-->
+<!--          &lt;!&ndash;          Rs.299 &ndash;&gt;-->
+<!--          <span th:text="'Rs.'+${newProduct.product_price}+'/-'"></span>-->
+<!--        </div>-->
+
+<!--        <div class="product-price" th:if="${popularDiscount.containsKey(newProduct.id)}">-->
+<!--          <span th:text="'Rs.'+(${newProduct.product_price} - (${newDiscount.get(trendingProduct.id)}/100) * ${newProduct.product_price})+'/-'"></span>-->
+<!--          <span class="old" th:text="'Rs.'+${newProduct.product_price}+'/-'"></span>-->
+<!--        </div>-->
+
+        <a th:href="@{~/cart/add/}+${newProduct.id}">
+          <button class="add-cart">add to cart</button>
+        </a>
+
+      </div>
+    </div>
+
+
+<!--    <div class="small-box" th:each="products:${product}">-->
+<!--      <div class="image">-->
+<!--        <a th:href="@{~/product/}+${newProduct.id}">-->
+<!--          <img class="Product-Image" th:src="'data:image/png;base64,'+${product.product_imageBase64}" alt="">-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="content">-->
+<!--        <h3><a th:href="@{~/product/}+${newProduct.id}" th:text="${newProduct.product_name}"></a></h3>-->
+<!--        <div class="review-star">-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star-half-alt"></i>-->
+<!--        </div>-->
+<!--        <div class="product-price">-->
+<!--          <span> <a th:href="@{~/product/}+${newProduct.id}" th:text=" 'Rs.' + ${newProduct.product_price}"></a></span>-->
+<!--        </div>-->
+<!--        <form th:method="post" th:action="@{/cart/add}" th:object="${cartItems}">-->
+<!--          <input type="text" hidden="hidden" th:field="*{id}" >-->
+<!--          <input type="text" hidden="hidden" th:text="">-->
+<!--          <button type="submit" class="add-cart">add to cart</button>-->
+
+<!--        </form>-->
+<!--&lt;!&ndash;        <a th:href="@{~/q/addCart/}+${newProduct.id}">&ndash;&gt;-->
+<!--&lt;!&ndash;        </a>&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+
+  </div>
+</section>
+
+<!--&lt;!&ndash;footer areaa starts&ndash;&gt;-->
+<!--<footer class="text-center text-lg-start bg-light text-muted">-->
+<!--  <div th:replace="~{fragments/footer.html :: footer-area}"></div>-->
+<!--</footer>-->
+
+<!--&lt;!&ndash;footer area ends &ndash;&gt;-->
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer class="text-center text-lg-start bg-light text-muted">-->
+<!--  &lt;!&ndash; footer area starts &ndash;&gt;-->
+<!--  <div class="footer-area">-->
+<!--    &lt;!&ndash; Section: Social media &ndash;&gt;-->
+<!--    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: #684027">-->
+<!--      &lt;!&ndash; Left &ndash;&gt;-->
+<!--      <div class="me-5 d-none d-lg-block">-->
+<!--        <span>Get connected with us on social networks:</span>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; Left &ndash;&gt;-->
+
+<!--      &lt;!&ndash; Right &ndash;&gt;-->
+<!--      <div>-->
+<!--        <a href="" class="me-4 text-reset">-->
+<!--          <i class="fab fa-facebook-f"></i>-->
+<!--        </a>-->
+<!--        <a href="" class="me-4 text-reset">-->
+<!--          <i class="fab fa-twitter"></i>-->
+<!--        </a>-->
+<!--        <a href="" class="me-4 text-reset">-->
+<!--          <i class="fab fa-google"></i>-->
+<!--        </a>-->
+<!--        <a href="" class="me-4 text-reset">-->
+<!--          <i class="fab fa-instagram"></i>-->
+<!--        </a>-->
+<!--        <a href="" class="me-4 text-reset">-->
+<!--          <i class="fab fa-linkedin"></i>-->
+<!--        </a>-->
+<!--        <a href="" class="me-4 text-reset">-->
+<!--          <i class="fab fa-github"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; Right &ndash;&gt;-->
+<!--    </section>-->
+<!--    &lt;!&ndash; Section: Social media &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Section: Links  &ndash;&gt;-->
+<!--    <section class="">-->
+<!--      <div class="container text-center text-md-start mt-5">-->
+<!--        &lt;!&ndash; Grid row &ndash;&gt;-->
+<!--        <div class="row mt-3">-->
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">-->
+<!--            &lt;!&ndash; Content &ndash;&gt;-->
+<!--            <h6 class="text-uppercase fw-bold mb-4">-->
+<!--              <i class="fas fa-gem me-3"></i>Coffee Shop-->
+<!--            </h6>-->
+<!--            <p>-->
+<!--              Lorem ipsum dolor sit amet consectetur adipisicing elit.-->
+<!--              A ratione magnam iste neque ea. Repellat, eos placeat-->
+<!--              inventore nisi vel nostrum voluptate ipsa ipsum, corporis, enim sit cumque dolorum cum?-->
+<!--            </p>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">-->
+<!--            &lt;!&ndash; Links &ndash;&gt;-->
+<!--            <h6 class="text-uppercase fw-bold mb-4">-->
+<!--              Products-->
+<!--            </h6>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Coffee</a>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Cappuccino</a>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Late</a>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Tea</a>-->
+<!--            </p>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">-->
+<!--            &lt;!&ndash; Links &ndash;&gt;-->
+<!--            <h6 class="text-uppercase fw-bold mb-4">-->
+<!--              Useful links-->
+<!--            </h6>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Home</a>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">about</a>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Shop</a>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              <a href="#!" class="text-reset">Contact</a>-->
+<!--            </p>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">-->
+<!--            &lt;!&ndash; Links &ndash;&gt;-->
+<!--            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>-->
+<!--            <p><i class="fas fa-home me-3"></i> Softwarica, Dilli-bazar</p>-->
+<!--            <p>-->
+<!--              <i class="fas fa-envelope me-3"></i>-->
+<!--              pasal@example.com-->
+<!--            </p>-->
+<!--            <p><i class="fas fa-phone me-3"></i> +977 9825352010</p>-->
+<!--            <p><i class="fas fa-print me-3"></i> +977 9000000000</p>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Grid row &ndash;&gt;-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    &lt;!&ndash; Section: Links  &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
+<!--    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">-->
+<!--      © 2021 Copyright:-->
+<!--      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">CoffeeShop.com</a>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
+<!--  </div>-->
+<!--  &lt;!&ndash; footer area &ndash;&gt;-->
+<!--</footer>-->
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+
+
+</body>
+
+<script>
+  const form1 = document.getElementsByClassName("form1");
+
+  // FOR VALIDATION
+
+  const password = document.getElementsByClassName("password");
+  const confirm_password = document.getElementsByClassName("confirm Password");
+
+  form1.addEventListener("submit", (e) => {
+    if (password.value !== confirm_password.value ) {
+      alert("password do not match!");
+      e.preventDefault();
+    }
+  });
+
+  const email = document.getElementsByClassName("email");
+  const phone = document.getElementsByClassName("phone-num");
+
+  email.addEventListener("invalid", (e) => {
+    e.target.setCustomValidity("please enter a valid email address")
+  });
+
+  email.addEventListener("input", (e) => {
+    e.target.setCustomValidity("");
+  });
+
+  phone.addEventListener("invalid", (e) => {
+    e.target.setCustomValidity("please enter a valid phone number")
+  });
+
+  phone.addEventListener("input", (e) => {
+    e.target.setCustomValidity("");
+  })
+
+  password.addEventListener("invalid", (e) => {
+    e.target.setCustomValidity("Please enter a password");
+  });
+
+  password.addEventListener("input", (e) => {
+    e.target.setCustomValidity("");
+  });
+
+  confirm_password.addEventListener("invalid", (e) => {
+    e.target.setCustomValidity("Passwords do not match");
+  });
+
+  confirm_password.addEventListener("input", (e) => {
+    e.target.setCustomValidity("");
+  });
+</script>
+
+<!---- javascript file link-->
+<script th:src="@{/js/js.js}"></script>
+</html>
